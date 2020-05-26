@@ -14,6 +14,7 @@ for (i = 0; i < arrayCognomi.length; i++  ) {
 
 console.log(arrayCognomi);
 
+// creo una variabile per recuperare il nome inserito scritto minuscolo
 nomeImmesso = cognomeUtente.toLowerCase();
 
 // stampo la lista ordinata nella console
@@ -23,10 +24,12 @@ console.log(arrayCognomi);
 // e in un alert
 alert(arrayCognomi);
 
+// creo la variabile posizione
 var posizione = arrayCognomi.indexOf(nomeImmesso);
 
 console.log(arrayCognomi.indexOf(nomeImmesso));
 
+// stampo la posizione
 alert('La posizione del nome inserito è ' + posizione);
 
 
