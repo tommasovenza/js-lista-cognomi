@@ -7,7 +7,6 @@ var cognomeUtente = prompt('inserisci il tuo cognome');
 // faccio push per aggiungere nomeImmesso alla lista
 arrayCognomi.push(cognomeUtente);
 
-
 // imposto il ciclo for per rendere i cognomi tutti minuscoli
 for (i = 0; i < arrayCognomi.length; i++  ) {
     arrayCognomi[i] = arrayCognomi[i].toLowerCase();
@@ -15,11 +14,20 @@ for (i = 0; i < arrayCognomi.length; i++  ) {
 
 console.log(arrayCognomi);
 
+nomeImmesso = cognomeUtente.toLowerCase();
+
 // stampo la lista ordinata nella console
 arrayCognomi.sort();
 console.log(arrayCognomi);
+
 // e in un alert
 alert(arrayCognomi);
+
+var posizione = arrayCognomi.indexOf(nomeImmesso);
+
+console.log(arrayCognomi.indexOf(nomeImmesso));
+
+alert('La posizione del nome inserito è ' + posizione);
 
 
 
